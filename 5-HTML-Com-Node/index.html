@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<style>
+@media screen and (min-width: 768px){
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+    /*
+    font-family: 'Righteous', cursive;
+    font-family: 'Sarala', sans-serif;
+    */
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    body{
+        font-size: 100%;
+        background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    }
+    
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .imagem-cabecalho{
+        height: 72px;
+    }
+    
+    .cabecalho-menu{
+        display: flex;
+        gap: 32px;
+    }
+    
+    .cabecalho-menu-item{
+        font-family: 'Sarala', sans-serif;
+        color: #FFF2E7;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    .conteudo{
+        border-top: 0.4px solid #FFF2E7;
+        margin-bottom: 48px;
+    }
+    
+    .conteudo-principal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .conteudo-principal-escrito-titulo{
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 64px;
+        color: #FFF2E7;
+    }
+    
+    .conteudo-principal-escrito-subtitulo{
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #ECD6C4;
+    }
+    .conteudo-principal-escrito-botão{
+        background-color: #ECD6C4;
+        border-radius: 20px ;
+        border: none;
+        box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25) ;
+        width: 185px;
+        height: 60px;
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #2F2325;
+    }
+    .conteudo-principal-escrito-botão:hover{
+        background-color: #8E5D52;
+    }
+    .conteudo-principal-imagem{
+        height: 350px;
+    }
+    
+    .conteudo-secundario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-top: 20px;
+    }
+    .conteudo-secundario-titulo{
+        border-top: 0.4px solid #FFF2E7;
+        padding-top: 20px;
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 24px;
+        color: #FFF2E7;
+        margin-bottom: 16px;
+    }
+    .paragrafo{
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #ECD6C4;
+    }
+    .rodape{
+        padding: 32px;
+        border-top: 0.4px solid #FFF2E7;
+    }
+    .rodape-imagem{
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um bot que irá moderar a sua comunidade no Dsiscord"><meta>
+    <title>Balle Bot - Modere a sua comunidade do Discord</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="smartstyle.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="imagem-cabecalho" src="Imagens/Vector.svg" alt="Logo Da comunidade">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="#">Comunidade</a>
+            <a class="cabecalho-menu-item" href="#">Turorial</a>
+            <a class="cabecalho-menu-item" href="#">Open Source</a>
+            <a class="cabecalho-menu-item" href="#">Comandos</a>
+        </nav>
+    </header>
+    
+    <main class="conteudo">
+
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Balle Bot</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Deixe a sua comunidade segura de um jeito fácil</h2>
+                <button class="conteudo-principal-escrito-botão">Me adicione!</button>
+            </div>
+            <img class="conteudo-principal-imagem" src="Imagens/freepik--Character--inject-5.svg" alt="Boneca">
+        </section>
+
+        <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">O que ela faz por você?</h3>
+            <p class="paragrafo">1. Cria um <strong>de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
+            <p class="paragrafo">2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
+            <p class="paragrafo">3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+            <img class="rodape-imagem" src="Imagens/BALLERINI.svg" alt="BALLERINI">
+    </footer>
+</body>
+</html>
